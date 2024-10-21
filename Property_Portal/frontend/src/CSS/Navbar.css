@@ -1,0 +1,63 @@
+.navbar{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    width:  100vw;
+    font-size:16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 5%;
+    width: 20%;
+}
+
+.navitem{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navitem p{
+    padding: 3px 16px;
+    text-align: center;
+}
+
+.navitem p:hover{
+    background-color:whitesmoke;
+}
+
+.logsign{
+    width: 30%;
+    margin-left: 5%;
+}
+
+.logsign div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logsign #auth{
+    background-color: whitesmoke;
+    padding: 3px 0;
+    width: 80px;
+    text-align: center;
+}
+
+.logsign #auth:hover{
+    background-color:transparent;
+}
+
+@media(max-width:768px){
+    .navitem{
+        display: none;
+        width: 0;
+    }
+}

@@ -1,0 +1,119 @@
+.profile{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-column-gap:20px ;
+    width: 80vw;
+    height: 80vh;
+    color: black;
+    margin: auto;
+    margin-top: 24px;
+    align-self: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.part-1{
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header{
+    padding: 2%;
+    height: auto;
+    width: 250px;
+    align-items: center;
+    font-size: 28px;
+}
+
+.profile_pic{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.header h1{
+    text-align: center;
+}
+
+.part-2{
+    margin-top: 50px;
+}
+
+.part-2::-webkit-scrollbar{
+    display: none;
+}
+
+.contact{
+    margin-bottom: 20px;
+    margin: 12px;
+}
+
+.contact h1{
+    font-size: 24px;
+}
+
+.contact p{
+    margin-bottom: 6px;
+}
+
+.contact hr{
+    margin-bottom: 12px;
+}
+
+.properties{
+    margin-bottom: 20px;
+    margin: 12px;
+}
+
+.properties h1{
+    font-size: 24px;
+}
+
+.properties p{
+    margin-bottom: 6px;
+}
+
+.properties hr{
+    margin-bottom: 12px;
+}
+
+.prop{
+    display: grid;
+    grid-template-columns:6fr 6fr;
+    height: auto;
+}
+
+.property-list{
+    height: 200px;
+    overflow-y: auto;
+    padding: 6px;
+}
+
+h2{
+    color: black;
+}
+
+.property-list::-webkit-scrollbar{
+    display: none;
+}
+
+.property{
+    background-color: gainsboro;
+    margin: 12px;
+    padding: 3px 12px;
+    border-radius: 12px;
+}
+
+.property h2{
+    font-size: 16px;
+    color: black;
+}
+
+.property p{
+    font-size: 12px;
+}

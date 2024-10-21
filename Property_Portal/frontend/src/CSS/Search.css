@@ -1,0 +1,157 @@
+.listing{
+    height: 90vh;
+    width: 100vw;
+    /* background-color: aqua; */
+}
+
+.search{
+    overflow-y: auto;
+    flex-basis: 50%;
+    gap:2%;
+    padding: 12px;
+}
+
+.search::-webkit-scrollbar{
+    display: none;
+}
+
+.map{
+    flex-basis: 50%;
+    gap:2%;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------------------------------------------------------------- */
+
+.searchbar{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.searchbar input{
+    width: 85%;
+    height: 28px;
+    margin: 8px 0 8px 0px;
+    padding: 7px 14px 7px 14px;
+    border-bottom: 1px solid black;
+}
+
+.searchbar div{
+
+}
+
+.filter{
+    margin-left: 5%;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.filter select{
+    margin-top: 12px;
+    width: 24%;
+    padding: 4px 6px 4px 6px;
+    border-radius: 6px;
+    transition-duration: 300ms;
+    border: none;
+}
+
+.filter select:focus,.filter select:hover{
+    background-color: gainsboro;
+    border: none;
+}
+
+
+.list{
+    margin: 16px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.listitem{
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+    transition-duration: 1000ms;
+    cursor: pointer;
+}
+
+.listitem:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.itempic img{
+    border-radius: 12px;
+}
+
+.itempic{
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+}
+
+.itempl{
+    padding: 8px;
+    height: 84px;
+}
+
+.itempl h1,.itempl h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.itempl p{
+    font-size: 12px;
+    display: flex;
+}
+
+.itemdata{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+}
+
+.itemdata div{
+    width: 30%;
+    background-color: gainsboro;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+@media (max-width:678px) {
+    .map{
+        display: none;
+    }
+
+    .search{
+        flex-basis: 100%;
+    }
+
+    .listitem{
+        height: 420px;
+    }
+
+    .itempic{
+        height: 200px;
+    }
+}
+
+@media (max-width:576px) {
+    .list{
+        display: block;
+    }
+}
